@@ -1,18 +1,28 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+.page {
+  background-color: lightgrey;
+  margin: 2px;
+  border: 2px solid purple;
+}
 .list {
   width: 400px;
   display: flex;
-  flex-direction: row;
+  border: 4px purple solid;
   list-style-type: none;
   justify-content: space-between;
+  background-color: hotpink;
+  height: 500px;
+  width: 500px;
+  font-size: 16px;
 }
 .list-item {
-  padding: 0px 40px 0px 40px;
 }
 .title {
   font-size: 28px;
+  color: blueviolet;
+  border: 2px purple solid;
 }
 .subtitle {
   font-size: 14px;

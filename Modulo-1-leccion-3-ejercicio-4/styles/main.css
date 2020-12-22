@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+
+.title {
+  display: inline;
+}
+.block {
+  display: block;
+  border: 4px solid palevioletred;
+  background-color: rgb(255, 230, 230);
+  height: 120px;
+  width: 200px;
+}
+
+.item {
+  font-size: 20px;
+}
+
+.inline {
+  display: inline-block;
+  background-color: grey;
+  border-bottom: 4px black;
+}
+.inline-block {
+  display: inline-block;
+  background-color: grey;
+  height: 50px;
+  width: 100%;
+}
+.flex {
+  display: flex;
+  background-color: hotpink;
+}
+.singer {
+  color: green;
+  font-size: 30px;
+  text-decoration: none;
+}
+a.singer:visited {
+  color: green;
+}
