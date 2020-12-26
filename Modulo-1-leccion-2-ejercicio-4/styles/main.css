@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.page {
+  height: 100vh;
+  line-height: 1.5em;
+  font-size: 18px;
+  color: rebeccapurple;
+  background-color: mediumpurple;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  height: 80px;
+  padding: 20px 0px 0px 0px;
+}
+.subtitle {
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  text-align: center;
+  height: 40px;
+  padding: 5px 0px 0px 0px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+}
+.list-item {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.list-link {
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  border-top: 3px black solid;
+}
+.logo {
+  width: 200px;
+}
