@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>COLOREAR</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
-  <body>
-    <h1>Colorear Links</h1>
-    <article>
-      <h2>Título</h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+  <body class="page">
+    <header>
+    <h1 class="title">enlaces</h1>
+  </header>
+  <main>
+      <h2 class="subtitle">utilidad</h2>
       <p>
-        Colorear enlaces HTML puede ser una gran manera de distinguirlos de su
-        texto regular, o agregar un poco de estilo a su sitio web. Aquí le
-        mostraremos cómo el color Hex enlaces HTML utilizando códigos de color,
-        RGB y HSL valores y nombres de colores HTML.
+        Uno de los conceptos básicos de HTML es el <strong>enlace</strong> que nos permite
+        vincular páginas o partes de ellas de manera que <em>la información no quede como algo aislado sino conectado.</em>
       </p>
       <p>
-        Nombres de colores HTML son a menudo más legible que sus contrapartes de
-        código Hex, y puede utilizarse en la misma forma. Sustituir el código
-        Hex de color con el nombre de color HTML del ejemplo anterior y voila,
-        el código es muy claro.
+        El <strong>enlace</strong> se escribe con la etiqueta <a> y con un atributo href="" que indica a dónde enlaza.
       </p>
-      <aside class="links">
-        <h3>Enlaces relaccionados</h3>
-        <ul>
-          <li><a href="#">Enlace 1</a></li>
-          <li><a href="#">Enlace 2</a></li>
-          <li><a href="#">Enlace 3</a></li>
-          <li><a href="#">Enlace 4</a></li>
+      <p>Podemos enlazar a: una página o a una posición dentro de la misma
+        </p>
+          <h2 class="subtitle">tipos</h2>
+          <p><strong>El primer enlace es muy fácil,</strong> simplemente ponemos la dirección de nuestra página o archivo como valor del atributo href</p>
+          <p><strong>El segundo tipo de enlace</strong> necesita de un atributo especial que es el id="". Cualquier elemento de nuestra página puede llevar este atributo pero al tratarse de un identificador no debe haber dos elementos con la misma id en la misma página.</p>
+        <h2 class="subtitle">lenguajes de programación</h2>
+        <ul class=list>
+          <li class="list-item"><a class="list-link" href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">java scrip</a></li>
+          <li class="list-item"><a class="list-link" href="https://es.wikipedia.org/wiki/Perl" target="_blank">perl</a></li>
+          <li class="list-item"><a class="list-link" href="https://es.wikipedia.org/wiki/Python" target="_blank">python</a></li>
+          <li class="list-item"><a class="list-link" href="https://es.wikipedia.org/wiki/Visual_Basic_for_Applications" target="_blank">vba</a></li>
         </ul>
-      </aside>
-    </article>
+  </main>
+    <footer class="footer">
+      <small>El <strong>Copyright</strong> es la forma (anglosajona) de protección legal de una obra de Propiedad Intelectual, que otorga a los creadores (autores) y productores de este tipo de contenido los derechos exclusivos para controlar y ejercitar determinados derechos de uso sobre dicho contenido.</small>
+      <a href=https://es.wikipedia.org/wiki/Derecho_de_autor>
+        <img class="logo"src="./images/logo-copyright.png" alt="logo copy">
+      </a>
+    </footer>
   </body>
 </html>

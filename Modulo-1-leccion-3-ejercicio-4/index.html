@@ -7,38 +7,44 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <header>
-      <h1 class="title">DISPLAYS</h1>
+    <header class="header">
+      <h1>DISPLAYS</h1>
     </header>
-    <main>
-      <section class="block">
-        <h2>BLOCK</h2>
-        <div class="item">morado</div>
-        <div class="item">verde</div>
-        <div class="item">gris</div>
-      </section>
-
-      <section class="inline">
-        <h2>INLINE</h2>
-        <div class="item">morado</div>
-        <div class="item">verde</div>
-        <div class="item">gris</div>
-      </section>
-
+    <main class="main">
       <section>
-        <h2 class="inline-block">INLINE-BLOCK</h2>
-        <a class="singer" href="https://es.wikipedia.org/wiki/Britney_Spears"
-          >Britney</a
-        >
-        <div>morado</div>
-        <div>verde</div>
-        <div>gris</div>
+        <h2 class="type1">sin display</h2>
+        <span class="item1">por defecto es block</span>
+        <span class="item1">permite height</span>
+        <span class="item1">permite width</span>
+        <span class="item1">permite text-align y padding</span>
       </section>
       <section>
-        <h2 class="flex">FLEX</h2>
-        <div class="item">morado</div>
-        <div class="item">verde></div>
-        <div class="item">gris</div>
+        <h2 class="type2">block</h2>
+        <span class="item2">igual que sin display</span>
+        <span class="item2">permite height</span>
+        <span class="item2">permite width</span>
+        <span class="item2">permite text-align y padding cuidado!!</span>
+      </section>
+      <section>
+        <h2 class="type3">inline</h2>
+        <span class="item3">solamente abarca el texto escrito</span>
+        <span class="item3"><strong>no</strong> permite height & width</span>
+        <span class="item3"><strong>no</strong> text-align</span>
+        <span class="item3">permite padding pero cuidado!!</span>
+        <span class="item3">se ajusta al tamaño de la fuente</span>
+      </section>
+      <section>
+        <h2 class="type4">inline block</h2>
+        <span class="item4">abarca el texto escrito</span>
+        <span class="item4">permite height & width determinadas</span>
+        <span class="item4"><em>NO</em> se ajusta al tamaño de la fuente</span>
+      </section>
+      <section>
+        <h2 class="type5">flex flex flex</h2>
+        <span class="item5">eje principal x defecto horizontal</span>
+        <span class="item5">permite height & width</span>
+        <span class="item5">permite justificar</span>
+        <span class="item5">permite alinear</span>
       </section>
     </main>
   </body>
