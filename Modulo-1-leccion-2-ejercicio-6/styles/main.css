@@ -22,8 +22,5 @@ h2 {
   background-image: url("https://www.fillmurray.com/130/130");
 }
 .box--3 {
-  background-image: url("https://www.fillmurray.com/110/110");
-  background-color: cyan;
-  background-size: cover;
-  background-position: right 50% bottom 50%;
+  background: url("https://www.fillmurray.com/110/110") center no-repeat cyan;
 }
