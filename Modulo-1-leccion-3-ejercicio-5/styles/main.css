@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+.div1 {
+  width: 200px;
+  height: 318px;
+  border: 5px grey solid;
+  border-radius: 2%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.photo {
+  height: 318px;
+}
+.div2 {
+  box-sizing: border-box;
+  width: 200px;
+  height: 318px;
+  border: 5px grey solid;
+  border-radius: 2%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
