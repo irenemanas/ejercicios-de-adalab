@@ -1,0 +1,20 @@
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+  text-transform: uppercase;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px darkmagenta solid;
+  box-sizing: border-box;
+}
+.item {
+  font-size: 18px;
+  width: 200px;
+  height: 100px;
+  border: 1px purple solid;
+  background-color: plum;
+  text-align: center;
+}
