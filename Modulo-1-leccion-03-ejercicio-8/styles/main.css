@@ -1,0 +1,56 @@
+:root {
+  --brand-color: purple;
+  --bacground-color: grey;
+  --main-color: rgb(190, 120, 190);
+  --text-color: rgb(21, 6, 24);
+}
+:root {
+  /*Escribe aquí tu código*/
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--main-color);
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+p {
+  width: 50%;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.title {
+  color: var(--brand-color);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--main-color);
+  margin: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+p a {
+  color: var(--brand-color);
+}
