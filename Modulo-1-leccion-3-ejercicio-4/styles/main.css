@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+.article {
+  border: 2px grey solid;
+
+  padding: 20px 10px 10px 10px;
+  font-size: 18px;
+}
+.article--1 {
+  display: flex;
+  padding-bottom: 20px;
+}
+.article--2 {
+  display: flex;
+  padding-bottom: 10px;
+}
+.photo-1 {
+  width: 200px;
+  padding-right: 10px;
+}
+.photo-2 {
+  height: 200px;
+  padding-left: 10px;
+}
