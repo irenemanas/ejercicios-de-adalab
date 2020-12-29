@@ -1,0 +1,35 @@
+.page {
+  margin: 0;
+  height: 100vh;
+}
+
+.title1 {
+  color: blueviolet;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  border: 2px blueviolet solid;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.header {
+  background-color: lightgray;
+  min-height: 20px;
+  padding: 5px;
+}
+.main {
+  background-color: grey;
+  height: 500px;
+  padding: 5px;
+}
+.footer {
+  background-color: orange;
+  min-height: 20px;
+  padding: 5px;
+}
