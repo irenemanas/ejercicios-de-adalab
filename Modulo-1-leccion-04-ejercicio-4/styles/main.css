@@ -1,0 +1,35 @@
+.page {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container {
+  display: flex;
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-item-big {
+  border: 2px orange solid;
+  padding: 8px;
+  background-color: white;
+  width: 519px;
+}
+
+.flex-item {
+  border: 2px orange solid;
+  padding: 8px;
+  background-color: white;
+  width: 250px;
+}
+
+.photo {
+  padding: 8px;
+}
+
+.photo-big {
+  width: 500px;
+}
+.photo-small {
+  height: 160px;
+}
