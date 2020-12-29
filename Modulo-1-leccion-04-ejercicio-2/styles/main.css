@@ -16,5 +16,6 @@
   height: 100px;
   border: 1px purple solid;
   background-color: plum;
-  text-align: center;
+  box-sizing: border-box;
+  padding: 40px 100px 50px 95px;
 }
