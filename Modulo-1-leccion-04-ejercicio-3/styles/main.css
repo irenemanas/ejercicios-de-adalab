@@ -1,0 +1,12 @@
+.menu {
+  display: flex;
+  box-sizing: border-box;
+  border: 2px purple solid;
+  height: 100px;
+  text-transform: capitalize;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
