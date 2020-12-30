@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+  height: 120px;
+}
+.last {
+  height: 200px;
+}
+.cookies {
+  height: 100px;
+  background-color: yellow;
+  font-size: 24px;
+  padding: 4px;
+  position: fixed;
+  bottom: 0;
+}
