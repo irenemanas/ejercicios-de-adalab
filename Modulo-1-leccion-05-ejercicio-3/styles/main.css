@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+.header {
+  background-color: blueviolet;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+.container {
+  position: relative;
+  top: 40px;
+}
+.p1 {
+  position: relative;
+}
