@@ -30,32 +30,42 @@
 .footer {
   background-color: darkgrey;
 }
-@media all and (min-width: 480px) {
+@media all and (min-width: 481px) {
 
     .page {
-        padding-right: 53vh;
+        padding-right: 52vh;
     }
   .menu {
     position: absolute;
-    width: 23vw;
+    width: 25vw;
   }
   .main {
     position: relative;
     left: 25vw;
-    display: inline-block;
     margin-bottom: 0;
+    margin-left: 2vw;
+  }
+  .container {
+      display: flex;
+  }
+  .main-text {
+      width: 45vw;
+      font-size: 18px;
+      margin-right: 1vw;
   }
   .rectangle {
-      height: 35vh;
-      width: 25vw;
-      background-color: orange;  
+      height: 43vh;
+      width: 30vw;
+      background-color: orange; 
+      margin-bottom: 5vh;
   }
   
   .footer {
       position: relative;
       left: 25vw;
+      margin-left: 2vw;
       
   }
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1001px) {
   /* Reglas CSS que aplicaremos */
 }
