@@ -30,3 +30,32 @@
 .footer {
   background-color: darkgrey;
 }
+@media all and (min-width: 480px) {
+
+    .page {
+        padding-right: 53vh;
+    }
+  .menu {
+    position: absolute;
+    width: 23vw;
+  }
+  .main {
+    position: relative;
+    left: 25vw;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .rectangle {
+      height: 35vh;
+      width: 25vw;
+      background-color: orange;  
+  }
+  
+  .footer {
+      position: relative;
+      left: 25vw;
+      
+  }
+@media all and (min-width: 1000px) {
+  /* Reglas CSS que aplicaremos */
+}
