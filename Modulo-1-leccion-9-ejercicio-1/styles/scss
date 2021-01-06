@@ -1,0 +1,49 @@
+$color-body: #010101;
+$fontText: 'arial', sans-serif;
+$fontSize: 18px;
+$backgroundColor-primary: yellow;
+$headerHeight: 50px;
+$backgroundColor-secundary: cyan;
+$footerHeight: 50px;
+$wrapper-margin: 0 60px;
+
+body {
+  color: $color-body; 
+  display: flex;
+  font: $fontSize $fontText;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: $wrapper-margin;
+  
+}
+.header {
+ 
+  background: $backgroundColor-primary;
+  height: $headerHeight; /* Pasar a variable */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.main {
+  background: $backgroundColor-secundary;
+  /* Pasar a variable */
+  flex: 1;
+}
+.main__title {
+  color: #fff;
+  font-size: 2.5em;
+}
+.main__content p {
+  font-size: 1.1em;
+  line-height: 140%;
+}
+.footer {
+  background: $backgroundColor-primary;
+  height: $footerHeight;
+  /* Pasar a variable */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+

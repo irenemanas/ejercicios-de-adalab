@@ -6,42 +6,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body class="page">
-    <header class="header">
-      <h1>Mi primera web</h1>
-    </header>
-    <nav class="menu">
-      <ul class="link-menu">
-        <li><a href="">link1</a></li>
-        <li><a href="">link2</a></li>
-        <li><a href="">link3</a></li>
-      </ul>
-    </nav>
-    <main class="main">
-      <h2 class="heading">Mobile first</h2>
-      <div class="container">
-        <p class="main-text">
-          La maquetación mobile first da prioridad a los dispositivos con menos
-          capacidad de pantalla, conexión y batería de manera que, por ejemplo,
-          se cargan imágenes más pequeñas que consumen muchos menos datos o se
-          muestra una maquetación más simple y adaptada a que usemos los dedos
-          como punteros (botones y zonas clicables más grandes). Y si luego
-          resulta que estamos viendo la página en un una pantalla más grande,
-          gracias a las mediaqueries, podemos cargar elementos más pesados,
-          mostrar otros que en móvil pueden no tener sentido y adaptarlo todo a
-          que ya se va a manejar con ratón y/o teclado.
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Mi primera web</h1>
+      </header>
+      <nav class="menu">
+        <ul class="link-menu">
+          <li><a href="">link1</a></li>
+          <li><a href="">link2</a></li>
+          <li><a href="">link3</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <h2 class="heading">Mobile first</h2>
+        <div class="container">
+          <p class="main-text">
+            La maquetación mobile first da prioridad a los dispositivos con
+            menos capacidad de pantalla, conexión y batería de manera que, por
+            ejemplo, se cargan imágenes más pequeñas que consumen muchos menos
+            datos o se muestra una maquetación más simple y adaptada a que
+            usemos los dedos como punteros (botones y zonas clicables más
+            grandes). Y si luego resulta que estamos viendo la página en un una
+            pantalla más grande, gracias a las mediaqueries, podemos cargar
+            elementos más pesados, mostrar otros que en móvil pueden no tener
+            sentido y adaptarlo todo a que ya se va a manejar con ratón y/o
+            teclado.
+          </p>
+          <div class="rectangle"></div>
+        </div>
+      </main>
+      <footer class="footer">
+        <h3 class="info">Related info</h3>
+        <p>
+          En el CSS esto se representa escribiendo primero los CSS que se verán
+          en las pantallas/ventanas de navegador más pequeñas. Posteriormente
+          añadiremos, dentro de mediaqueries, los ajustes necesarios para los
+          tamaños mayores de pantalla o ventana.
         </p>
-        <div class="rectangle"></div>
-      </div>
-    </main>
-    <footer class="footer">
-      <h3 class="info">Related info</h3>
-      <p>
-        En el CSS esto se representa escribiendo primero los CSS que se verán en
-        las pantallas/ventanas de navegador más pequeñas. Posteriormente
-        añadiremos, dentro de mediaqueries, los ajustes necesarios para los
-        tamaños mayores de pantalla o ventana.
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
