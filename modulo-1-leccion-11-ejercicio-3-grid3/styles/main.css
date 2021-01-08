@@ -1,40 +1,48 @@
 body {
   margin: 0;
 }
-.wrapper {
+.page {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 20% 1fr 20%;
   grid-gap: 3px;
 }
 .header {
   color: white;
   background-color: lightpink;
   text-transform: uppercase;
-  height: 20vh;
-  grid-column: span 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 12;
+  /* grid-column: 1 / 13; */
   grid-row: span 1;
 }
 .menu {
   color: white;
   background-color: purple;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: span 4;
-  grid-row: span;
 }
 .content {
   color: white;
   background-color: lightcoral;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: span 8;
-  grid-row: span;
 }
 .footer {
   color: white;
   background-color: lightsteelblue;
   text-transform: uppercase;
-  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: span 12;
-  grid-row: span 1;
 }
