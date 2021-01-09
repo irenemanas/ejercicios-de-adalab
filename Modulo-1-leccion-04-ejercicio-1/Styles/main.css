@@ -14,11 +14,11 @@
   border: 2px purple solid;
   box-sizing: border-box;
 }
-.item {
+.item-c {
   font-size: 22px;
   background-color: plum;
   border-right: 2px purple solid;
-  padding: 8px;
+  padding: 10px;
 }
 .rows {
   display: flex;
@@ -29,8 +29,9 @@
   border: 2px purple solid;
   box-sizing: border-box;
 }
-.item {
+.item-r {
   font-size: 22px;
   background-color: plum;
   border-bottom: 2px purple solid;
+  padding: 5px;
 }
