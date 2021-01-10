@@ -1,7 +1,7 @@
 .page {
+  margin: 15px;
+  background-color: $color-bg;
   display: grid;
-  height: 100vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  background-color: lightgray;
 }

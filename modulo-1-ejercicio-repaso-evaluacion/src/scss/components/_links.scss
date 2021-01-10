@@ -1,10 +1,13 @@
-.page__main--menu {
+.main__menu {
   background-color: lime;
   grid-column: 1/5;
   grid-row: 2/3;
   @media all and (min-width: 480px) {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-right: 20px;
   }
+}
+.menu {
+  list-style: none;
+  padding-left: 0;
 }
