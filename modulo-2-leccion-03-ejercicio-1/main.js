@@ -1,5 +1,5 @@
 'use strict';
-
+// EJERCICIO 1 
 // avatar por defecto
 const DEFAULT_AVATAR = 'http://placehold.it/300x300';
 
@@ -18,3 +18,12 @@ imageAvatar.src = userAvatar;
 // metemos una u otra imagen
 imageAvatar.src = userAvatar || DEFAULT_AVATAR;
 
+// EJERCICIO 2
+
+const validName1 = 'Amanda'
+const validName2 = 'Irene'
+const accessName = 'Amanda'
+
+if (accessName === validName1 || accessName === validName2) {
+    console.log ("Bienvenida, accessName";
+}
