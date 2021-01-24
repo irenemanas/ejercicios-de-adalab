@@ -1,0 +1,27 @@
+.success {
+  background-color: aquamarine;
+  border: 2px green solid;
+  color: green;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 80px;
+}
+.error {
+  background-color: coral;
+  border: 2px rgb(148, 3, 3) solid;
+  color: rgb(148, 3, 3);
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 80px;
+}
+.warning {
+  background-color: rgb(245, 245, 105);
+  border: 2px orangered solid;
+  color: orangered;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 80px;
+}
