@@ -1,19 +1,19 @@
 'use strict'
 
 const warningElement = document.querySelector ('.warning');
-warningElement.innerHTML = 'AVISO ' + ' Tenga cuidado';
 const errorElement = document.querySelector ('.error');
-errorElement.innerHTML = 'ERROR ' + ' Ha surgido un error';
 const successElement = document.querySelector ('.success');
-successElement.innerHTML = 'CORRECTO ' + 'Los datos son correctos';
 
-const resultElement = successElement;
+const resultElement = errorElement;
 
 
 if (resultElement === warningElement) {
-    console.log (warningElement.innerHTML)
+    warningElement.innerHTML = 'AVISO ' + ' Tenga cuidado';
+    console.log (warningElement.innerHTML);
 } else if (resultElement === errorElement) {
+    errorElement.innerHTML = 'ERROR ' + ' Ha surgido un error';
     console.log (errorElement.innerHTML)
 } else {
+    successElement.innerHTML = 'CORRECTO ' + 'Los datos son correctos';
     console.log (successElement.innerHTML)
 }
