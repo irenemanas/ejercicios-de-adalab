@@ -1,7 +1,10 @@
 'use strict'
 
-const paragraph1 = document.querySelector('.paragraph')
-function showOtherParagraph() {
-    console.log('Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatibus aut ut aliquam, corrupti eos neque quibusdam ex amet soluta commodi quis laborum repellat nesciunt quo hic corporis, dolor unde. ')  
+const main = document.querySelector('.main');
+const paragraph1 = document.querySelector('.paragraph');
+const paragraph1Value = document.querySelector('.paragraph').innerHTML;
+function handlerParagraph() {
+    main.innerHTML += paragraph1Value;  
 }
-paragraph1.addEventListener('mouseover', showOtherParagraph);
+paragraph1.addEventListener('mouseover', handlerParagraph);
+
