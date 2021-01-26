@@ -1,13 +1,19 @@
 'use strict'
 
-const adalaber1 = {}
+const adalaber1 = {};
     adalaber1.name = 'Susana';
     adalaber1.age = 34;
     adalaber1.job = 'periodista';
+    adalaber1.run = phrase => `Estoy ${phrase}`;
+    adalaber1.runAMarathon = distance => `Estoy corriendo un maratón de ${distance} kilómetros`;
 
 console.log(`Mi nombre es ${adalaber1.name}, tengo ${adalaber1.age} años y soy ${adalaber1.job}`);
+console.log(adalaber1.run('corriendo'));
+console.log(adalaber1.runAMarathon(50));
 
-const adalaber2 = {}
+
+
+const adalaber2 = {};
     adalaber2.name = 'Rocío';
     adalaber2.age = 25;
     adalaber2.job = 'actriz';
