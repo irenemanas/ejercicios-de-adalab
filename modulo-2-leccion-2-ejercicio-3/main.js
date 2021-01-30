@@ -15,9 +15,10 @@ console.log(grapeKilo*grapePrice);
 
 
 const totalKiwi = (kiwiKilo * kiwiPrice);
-const totalpear = (pearKilo * pearPrice);
-const totalgrape = (grapeKilo * grapePrice);
-console.log(totalKiwi+totalpear+totalgrape);
+const totalPear = (pearKilo * pearPrice);
+const totalGrape = (grapeKilo * grapePrice);
+const totalCost = (totalKiwi + totalPear + totalGrape);
+console.log('El coste total de la compra es: ' + totalCost + '€');
 
 
 

@@ -9,3 +9,5 @@ const secondDogName = 'Luna';
 const thirdDogImage = 'https://images.dog.ceo/breeds/affenpinscher/n02110627_7065.jpg';
 const thirdDogName = 'Lana';
 
+const listElements = document.querySelector('.list');
+const listContent = '<li>
