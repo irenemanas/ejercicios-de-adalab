@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: orange;
+}
+
+.face {
+  color: black;
+  font-size: 160px;
+}
+.select {
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: white;
+}
+.button {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: royalblue;
+  border: none;
+  color: white;
+}
+.background-color-alt {
+  background-color: yellow;
+}
+.footer {
+  font-size: 12px;
+}
