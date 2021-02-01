@@ -11,4 +11,4 @@ const totalResult = priceResult + priceResult*0.21;
 
 console.log('Precio sin IVA: ' + priceResult + ',  IVA: ' + taxResult +  ' y  Total: ' + totalResult);
 }
-price(20);
+price(10);
