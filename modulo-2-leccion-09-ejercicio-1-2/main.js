@@ -20,7 +20,7 @@ function get100Numbers () {
     for (let i = 1; i < 101; i++) {
         arr1.push(i);
     }
-return arr1;
+    return arr1;
 }
 get100Numbers();
 console.log(arr1);
@@ -30,10 +30,26 @@ console.log(arr1);
 
 function getReversed100Numbers () {
     console.log(arr1.reverse());
+    get100Numbers();
 }
     
 getReversed100Numbers ();
 
+
+
+//OPCIÓN 2 - MIGUEL
+
+/*const arr2 = [];
+
+function getReversed100Numbers () {
+   const arr2 = get100Numbers();
+   console.log(arr2);
+   const arrReversed = arr2.reverse();
+   return arrReversed;
+}
+
+const newArray = getReversed100Numbers ();
+console.log(newArray); */  
 
 
 
