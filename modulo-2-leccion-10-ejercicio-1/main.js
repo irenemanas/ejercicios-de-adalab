@@ -1,5 +1,6 @@
 'use strict'
 
+
 function getIntegerNumber() {
     fetch("https://api.rand.fun/number/integer?max=100")
       .then(response => response.json())

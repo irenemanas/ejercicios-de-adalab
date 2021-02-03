@@ -1,13 +1,15 @@
 'use strict'
 
-function getDogImage() {
-    fetch("https://dog.ceo/api/breed/Chihuahua/images/random")
+
+function getLabradorImage() {
+    fetch("https://dog.ceo/api/breed/labrador/images/random")
       .then(response => response.json())
-      .then(data => {
-        const img = document.querySelector("img");
-        img.src = data.message;
-        img.alt = "Un chihuahua";
+      .then(dataImage => {
+        const img = document.querySelector(".js-image");
+        img.src = dataImage.message;
+        img.alt = "Un Labrador";
       });
-  }
-  const btn = document.querySelector(".js-dog");
-  btn.addEventListener("click", getDogImage);
+}
+  
+  const btn = document.querySelector(".js-labrador");
+  btn.addEventListener("click", getLabradorImage);
