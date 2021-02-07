@@ -4,14 +4,15 @@ let userData = {};
 
 function getGitData() {
   console.log(1)
-    fetch("https://api.github.com/users/gootyfer") // empieza pause
+    fetch("https://api.github.com/users/{username}") // empieza pause
       .then(response => response.json()) // se reanuda
       .then(data => {
         cleanApiData(data);
-        paintData()
-        console.log(2)
+        paintData();
+        
+        //console.log(2)
       });
-      console.log(3)
+      //console.log(3)
   }
   const btn = document.querySelector(".js-gitData");
   btn.addEventListener("click", getGitData);
@@ -21,7 +22,8 @@ function getGitData() {
 
       name: data.login,
       avatarUrl: data.avatar_url,
-      createdAt: data.created_at,
+      repoElement:data.public_repos,
+      repoDate: data.created_at,
       
 
     }
@@ -36,16 +38,15 @@ function getGitData() {
         const img = document.querySelector(".js-image");
         img.src = userData.avatarUrl;
         img.alt = "Foto usuario";
-        const createdDate = document.querySelector(".js-repoDate");
-        createdDate.innerHTML = userData.createdAt;
-        
-       
-        
+        const repoElement= document.querySelector(".js-repo");
+        repoElement.innerHTML = userData.repoElement
+        const repoDate = document.querySelector(".js-repoDate");
+        repoDate.innerHTML = userData.repoDate;
+             
         
   }
 
   function logUserData() {
-    console.log(userData)
+    //console.log(userData)
   }
-  const body = document.querySelector("body");
-  body.addEventListener("click", logUserData);
+  

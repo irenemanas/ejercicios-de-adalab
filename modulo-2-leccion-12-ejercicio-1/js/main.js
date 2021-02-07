@@ -1,23 +1,35 @@
 'use strict'
 
+// Creamos un listado con tres elementos de un array
+
 const numbers = [1,2,3];
-
-
-const list1 = document.createElement('li');
-const contentList1 = document.createTextNode('1');
-list1.appendChild(contentList1);
-
 const list = document.querySelector('.js-list');
-list.appendChild(list1);
 
+console.log(numbers);
 
+function addNumbers() {
+    for (let index = 0; index < numbers.length; index++) {
+        const newItem = document.createElement('li');
+        const newContent = document.createTextNode(`${numbers[index]}`);
+        newItem.appendChild(newContent);
+        list.appendChild(newItem);
+        
+    }
+}
 
-const list2 = document.createElement('li');
-const contentList2 = document.createTextNode('2');
+addNumbers();
 
+// Creamos algo de contenido (un nuevo li)
+// Y se lo añadimos a nuestro <li>
 
-const list3 = document.createElement('li');
-const contentList3 = document.createTextNode('3');
+const newNumber =  '4';
+ 
+function addOtherNumber() {
+        const newList = document.createElement(`li`);
+        const newListContent = document.createTextNode(`${newNumber}`);
+        newList.appendChild(newListContent);
+        list.appendChild(newList); 
+}
 
-
+addOtherNumber();
 
