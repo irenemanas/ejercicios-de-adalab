@@ -1,0 +1,7 @@
+.grape {
+  display: block;
+  width: 20px;
+  height: 30px;
+  background-color: rgb(247, 184, 67);
+  border-radius: 50%;
+}
