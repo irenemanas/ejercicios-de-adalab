@@ -1,39 +1,20 @@
 'use strict';
 
-const seriesList = document.querySelector('.js-series');
-const url = "http://api.tvmaze.com/search/shows?q=girls";
+const seriesElement = document.querySelector('.js-series');
 
-
-function getAllSeries(){
-    fetch(url)
-    .then(response =>{return response.json() })
-    .then(data =>{
-        console.log(data);
-        const allSeriesList = [];
-        for (const data of allSeriesList) {
-            //console.log(data.allSeriesList);
-            
-        }
-    
-    })
-   
-}
-
-
-//paintSeries();
-
-
-function paintSeries() {
-    let htmlCode = "";
-    for (const serie of allSeriesList) { 
+fetch("http://api.tvmaze.com/search/shows?q=girls")
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+    let htmlCode = ''; 
+    for (const serie of data) {
         htmlCode += `<li>`;
-        htmlCode += `<p>Nombre: ${serie.show.name}</p>`;
-        htmlCode += `<p>Imagen:</p>`;
-        htmlCode += `<img class="js-serie__image" alt="Cartel Serie TV" src="${serie.show.image}">`;
+        htmlCode += `<p>Título: ${serie.show.name}</p>`;
+        htmlCode += `<img src="${serie.show.image}"/>`;
         htmlCode += `</li>`;
+       
         //console.log(serie.show.name);
-        //console.log(serie.show.image);
-}
-allSeries.innerHTML = htmlCode;
-}  
-getAllSeries();
+        console.log(serie.show.image);
+    }
+    seriesElement.innerHTML = htmlCode; 
+})

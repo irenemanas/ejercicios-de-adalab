@@ -2,12 +2,19 @@
 'use strict';
 
 // eslint-disable-next-line no-unused-vars
-const palettesContainer = document.querySelector('.js-palettes-container');
-const formElement = document.querySelector('.js-form');
 const filterInput = document.querySelector('.js-filter');
+const formElement = document.querySelector('.js-form');
 
 
 let palettes = [];
+let favourites = [
+  {
+    'id': '2-54-ha',
+    'name': 'Millenium Falcon',
+    'from': 'Star Wars',
+    'colors': ['B6B6BE','D8D7D4','413A31','746C66','A32D2C']
+  }
+];
 
 // API
 
@@ -63,13 +70,19 @@ function paintPalettes() {
   //console.log('pintando....', palettes);
   let htmlCode = '';
   for (const palette of palettes) {
-    if (palette.name.includes(filterInput.value)) {
-      htmlCode += `<li class="palette">`;
+    let isValidClass;
+    if (isValidPalette(palette)) {
+      isValidClass = '';
     }else {
-      htmlCode += `<li class="palette palette--hidden">`;
+      isValidClass = 'palette--hidden';
     }
-
-    //console.log(palette.colors);
+    let isFavouriteClass;
+    if (isFavouritePalette(palette)) {
+      isFavouriteClass = 'palette--favourite';
+    }else {
+      isFavouriteClass = '';
+    }
+    htmlCode += `<li class="palette js-palette ${isValidClass} ${isFavouriteClass}" id="${palette.id}">`;
     htmlCode += `<h2 class="palette__title">${palette.name}</h2>`;
     htmlCode += `<div class="palette__colors">`;
     for (const paletteColor of palette.colors) {
@@ -78,11 +91,33 @@ function paintPalettes() {
     htmlCode += `</div>`;
     htmlCode += `</li>`;
   }
+
+  const palettesContainer = document.querySelector('.js-palettes-container');
   palettesContainer.innerHTML = htmlCode;
+  listenPaletteEvents();
 }
 
+function isValidPalette(palette) {
+  const filterValue = filterInput.value.toLowerCase();
+  return palette.name.toLowerCase().includes(filterValue);
+}
 
+function isFavouritePalette(palette) {
+  return true;
+}
 
+//LISTEN PALETTE EVENTS
 
+function listenPaletteEvents() {
+  const paletteElements = document.querySelectorAll('.js-palette');
+  for (const paletteElement of paletteElements) {
+    paletteElement.addEventListener('click',handlePalette);
+
+  }
+}
+
+function handlePalette(ev) {
+  console.log('Me han clickado.....', ev.currentTarget);
+}
 //START APP
 getFromLocalStorage();

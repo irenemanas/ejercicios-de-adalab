@@ -1,0 +1,50 @@
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 50px 0 50px;
+}
+
+.profile-photo {
+  height: 200px;
+  border-radius: 50%;
+}
+.name-date {
+  padding-left: 50px;
+  color: rgb(83, 83, 83);
+}
+.date {
+  font-size: 20px;
+}
+
+.text {
+  line-height: 50px;
+  padding: 30px 50px;
+  color: rgb(83, 83, 83);
+}
+
+.App-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 50px 50px;
+}
+.read {
+  font-size: 26px;
+  color: grey;
+}
+.number {
+  font-size: 26px;
+  color: rgb(83, 83, 83);
+  transform: translate(200px, 0);
+}
+.fa-heart {
+  color: rgb(219, 7, 7);
+  font-size: 50px;
+}

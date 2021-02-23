@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Buscador de Series</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/film-clipart-movie-icon-5.jpg" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <h1>BUSCADOR DE SERIES</h1>
+      </header>
+
+      <div class="page">
+        <form>
+          <input type="text" class="form__input js-input" />
+          <button type="button" class="form__button js-button">BUSCAR</button>
+        </form>
+        <div class="shows__container">
+          <ul class="shows__container--favourites js-favourites-container"></ul>
+          <ul class="shows__container--shows js-shows-container"></ul>
+        </div>
+      </div>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

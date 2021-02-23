@@ -5,4 +5,4 @@ const removeMsg = () => {
     msg.innerHTML = '';
   };
   
-  setTimeout(removeMsg, 15000);
+  setTimeout(removeMsg, 3000);
