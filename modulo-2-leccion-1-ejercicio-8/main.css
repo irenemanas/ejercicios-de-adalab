@@ -3,9 +3,9 @@
   background-color: aquamarine;
   border: 3px green solid;
 }
-.button-2 {
-  padding: 20px;
-  background-color: aquamarine;
-  border: 3px green solid;
+.opacity {
   opacity: 0.3;
+}
+.hidden {
+  display: none;
 }
