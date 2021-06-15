@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 class App extends React.Component {
   render() {
     const students = [
       {
-        promo: 'A',
-        name: 'Sofía',
+        promo: "A",
+        name: "Sofía",
         age: 20,
       },
       {
-        promo: 'B',
-        name: 'María',
+        promo: "B",
+        name: "María",
         age: 21,
       },
       {
-        promo: 'A',
-        name: 'Lucía',
+        promo: "A",
+        name: "Lucía",
         age: 22,
       },
     ];
@@ -41,6 +41,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
-
-
